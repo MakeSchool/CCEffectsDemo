@@ -139,16 +139,16 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
-				B7378992180767190076A88C /* PixelateScene.h */,
-				B7378993180767190076A88C /* PixelateScene.m */,
 				621F0FC31989A077008A0A45 /* StartScene.h */,
 				621F0FC41989A077008A0A45 /* StartScene.m */,
+				62281DDE198A914D0097D2E3 /* DemoScene.h */,
+				62281DDF198A914D0097D2E3 /* DemoScene.m */,
+				B7378992180767190076A88C /* PixelateScene.h */,
+				B7378993180767190076A88C /* PixelateScene.m */,
 				621F0FC71989A167008A0A45 /* GlasScene.h */,
 				621F0FC81989A167008A0A45 /* GlasScene.m */,
 				62281DDA198A8F590097D2E3 /* EffectStackScene.h */,
 				62281DDB198A8F590097D2E3 /* EffectStackScene.m */,
-				62281DDE198A914D0097D2E3 /* DemoScene.h */,
-				62281DDF198A914D0097D2E3 /* DemoScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
