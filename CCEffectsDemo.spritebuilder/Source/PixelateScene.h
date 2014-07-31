@@ -7,7 +7,8 @@
 //
 
 #import "CCNode.h"
+#import "DemoScene.h"
 
-@interface MainScene : CCNode
+@interface PixelateScene : DemoScene
 
 @end

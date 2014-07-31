@@ -7,7 +7,8 @@
 //
 
 #import "CCNode.h"
+#import "DemoScene.h"
 
-@interface GlasScene : CCNode
+@interface GlasScene : DemoScene
 
 @end

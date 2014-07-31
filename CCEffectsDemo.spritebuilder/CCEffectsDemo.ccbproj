@@ -166,8 +166,6 @@
 		</dict>
 		<key>crystals/images/crystal-1.png</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>

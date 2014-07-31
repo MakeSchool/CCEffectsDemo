@@ -11,13 +11,18 @@
 @implementation StartScene
 
 - (void)pixelateDemo {
-    CCScene *pixelDemo = [CCBReader loadAsScene:@"MainScene"];
+    CCScene *pixelDemo = [CCBReader loadAsScene:@"PixelateScene"];
     [[CCDirector sharedDirector] pushScene:pixelDemo];
 }
 
 - (void)glassDemo {
     CCScene *glasScene = [CCBReader loadAsScene:@"GlasScene"];
     [[CCDirector sharedDirector] pushScene:glasScene];
+}
+
+- (void)stackDemo {
+    CCScene *stackScene = [CCBReader loadAsScene:@"StackScene"];
+    [[CCDirector sharedDirector] pushScene:stackScene];
 }
 
 @end

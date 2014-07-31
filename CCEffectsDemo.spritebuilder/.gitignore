@@ -1,8 +1,5 @@
 # SpriteBuilder
 #
-*.ppng
-Source/Resources/Published-iOS
-Source/Resources/Published-Android
 
 # Xcode
 #

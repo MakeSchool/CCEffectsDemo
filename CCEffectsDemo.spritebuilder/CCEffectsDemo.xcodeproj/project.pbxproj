@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		621F0FC51989A077008A0A45 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F0FC41989A077008A0A45 /* StartScene.m */; };
 		621F0FC91989A167008A0A45 /* GlasScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F0FC81989A167008A0A45 /* GlasScene.m */; };
+		62281DDC198A8F590097D2E3 /* EffectStackScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 62281DDB198A8F590097D2E3 /* EffectStackScene.m */; };
+		62281DE0198A914D0097D2E3 /* DemoScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 62281DDF198A914D0097D2E3 /* DemoScene.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -28,7 +30,7 @@
 		B7378978180762440076A88C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B737896E180762440076A88C /* Default@2x.png */; };
 		B73789871807631A0076A88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
 		B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B737894B180761A90076A88C /* libcocos2d.a */; };
-		B7378994180767190076A88C /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
+		B7378994180767190076A88C /* PixelateScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* PixelateScene.m */; };
 		B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
 		B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3317B978D7009739AE /* OpenGLES.framework */; };
 		B77F1B3617B978D7009739AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
@@ -62,6 +64,10 @@
 		621F0FC41989A077008A0A45 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartScene.m; path = Source/StartScene.m; sourceTree = "<group>"; };
 		621F0FC71989A167008A0A45 /* GlasScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlasScene.h; path = Source/GlasScene.h; sourceTree = "<group>"; };
 		621F0FC81989A167008A0A45 /* GlasScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlasScene.m; path = Source/GlasScene.m; sourceTree = "<group>"; };
+		62281DDA198A8F590097D2E3 /* EffectStackScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectStackScene.h; path = Source/EffectStackScene.h; sourceTree = "<group>"; };
+		62281DDB198A8F590097D2E3 /* EffectStackScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EffectStackScene.m; path = Source/EffectStackScene.m; sourceTree = "<group>"; };
+		62281DDE198A914D0097D2E3 /* DemoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoScene.h; path = Source/DemoScene.h; sourceTree = "<group>"; };
+		62281DDF198A914D0097D2E3 /* DemoScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoScene.m; path = Source/DemoScene.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -83,8 +89,8 @@
 		B737896E180762440076A88C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Source/Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B7378992180767190076A88C /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Source/MainScene.h; sourceTree = "<group>"; };
-		B7378993180767190076A88C /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = Source/MainScene.m; sourceTree = "<group>"; };
+		B7378992180767190076A88C /* PixelateScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelateScene.h; path = Source/PixelateScene.h; sourceTree = "<group>"; };
+		B7378993180767190076A88C /* PixelateScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PixelateScene.m; path = Source/PixelateScene.m; sourceTree = "<group>"; };
 		B77F1B2E17B978D7009739AE /* CCEffectsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCEffectsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -133,12 +139,16 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
-				B7378992180767190076A88C /* MainScene.h */,
-				B7378993180767190076A88C /* MainScene.m */,
+				B7378992180767190076A88C /* PixelateScene.h */,
+				B7378993180767190076A88C /* PixelateScene.m */,
 				621F0FC31989A077008A0A45 /* StartScene.h */,
 				621F0FC41989A077008A0A45 /* StartScene.m */,
 				621F0FC71989A167008A0A45 /* GlasScene.h */,
 				621F0FC81989A167008A0A45 /* GlasScene.m */,
+				62281DDA198A8F590097D2E3 /* EffectStackScene.h */,
+				62281DDB198A8F590097D2E3 /* EffectStackScene.m */,
+				62281DDE198A914D0097D2E3 /* DemoScene.h */,
+				62281DDF198A914D0097D2E3 /* DemoScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -351,7 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
-				B7378994180767190076A88C /* MainScene.m in Sources */,
+				B7378994180767190076A88C /* PixelateScene.m in Sources */,
+				62281DDC198A8F590097D2E3 /* EffectStackScene.m in Sources */,
+				62281DE0198A914D0097D2E3 /* DemoScene.m in Sources */,
 				621F0FC91989A167008A0A45 /* GlasScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				621F0FC51989A077008A0A45 /* StartScene.m in Sources */,
