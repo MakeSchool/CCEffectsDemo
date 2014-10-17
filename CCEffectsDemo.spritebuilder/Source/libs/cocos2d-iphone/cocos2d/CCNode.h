@@ -108,7 +108,7 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
 	NSMutableArray *_children;
 
 	// Weak ref to parent.
-	CCNode *__unsafe_unretained _parent;
+	__weak CCNode *_parent;
 
 	// A tag any name you want to assign to the node
     NSString* _name;
@@ -373,7 +373,7 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
 -(void) removeAllChildrenWithCleanup:(BOOL)cleanup;
 
 /** A weak reference to the parent. */
-@property(nonatomic,readwrite,unsafe_unretained) CCNode* parent;
+@property(nonatomic,readwrite,weak) CCNode* parent;
 
 /** Array of child nodes. */
 @property(nonatomic,readonly) NSArray *children;
@@ -553,9 +553,6 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
 /// @name Accessing Transformations and Matrices
 /// -----------------------------------------------------------------------
 
-/** Returns the 4x4 drawing transformation for this node. Really only useful when overriding visit:parentTransform: */
--(GLKMatrix4)transform:(const GLKMatrix4 *)parentTransform;
-
 /** Returns the matrix that transform the node's (local) space coordinates into the parent's space coordinates.
  The matrix is in Pixels.
  */
@@ -630,9 +627,6 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
 /** Calls visit:parentTransform using the current renderer and projection. */
 -(void) visit;
 
-/** Recursive method that visit its children and draw them. */
--(void) visit:(CCRenderer *)renderer parentTransform:(const GLKMatrix4 *)parentTransform;
-
 /** Sets and returns the color (tint), alpha is ignored when setting. */
 @property (nonatomic,strong) CCColor* color;
 
@@ -696,6 +690,17 @@ A common user pattern in building a Cocos2d game is to subclass CCNode, add it t
 /** Returns whether or not the opacity will be applied using glColor(R,G,B,opacity) or glColor(opacity, opacity, opacity, opacity).
  */
 -(BOOL) doesOpacityModifyRGB __attribute__((deprecated));
+
+@end
+
+
+@interface CCNode(NoARC)
+
+/** Returns the 4x4 drawing transformation for this node. Really only useful when overriding visit:parentTransform: */
+-(GLKMatrix4)transform:(const GLKMatrix4 *)parentTransform;
+
+/** Recursive method that visit its children and draw them. */
+-(void) visit:(CCRenderer *)renderer parentTransform:(const GLKMatrix4 *)parentTransform;
 
 @end
 

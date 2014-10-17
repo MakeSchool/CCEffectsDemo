@@ -49,7 +49,7 @@ static float conditionBlockSize(float blockSize);
 
 @interface CCEffectPixellate ()
 
-@property (nonatomic) float conditionedBlockSize;
+@property (nonatomic, assign) float conditionedBlockSize;
 
 @end
 
@@ -66,7 +66,7 @@ static float conditionBlockSize(float blockSize);
     CCEffectUniform* uniformUStep = [CCEffectUniform uniform:@"float" name:@"u_uStep" value:[NSNumber numberWithFloat:1.0f]];
     CCEffectUniform* uniformVStep = [CCEffectUniform uniform:@"float" name:@"u_vStep" value:[NSNumber numberWithFloat:1.0f]];
     
-    if((self = [super initWithFragmentUniforms:@[uniformUStep, uniformVStep] vertexUniforms:nil varying:nil]))
+    if((self = [super initWithFragmentUniforms:@[uniformUStep, uniformVStep] vertexUniforms:nil varyings:nil]))
     {
         _blockSize = blockSize;
         _conditionedBlockSize = conditionBlockSize(blockSize);
@@ -78,7 +78,7 @@ static float conditionBlockSize(float blockSize);
     return self;
 }
 
-+(id)effectWithBlockSize:(float)blockSize;
++(id)effectWithBlockSize:(float)blockSize
 {
     return [[self alloc] initWithBlockSize:blockSize];
 }

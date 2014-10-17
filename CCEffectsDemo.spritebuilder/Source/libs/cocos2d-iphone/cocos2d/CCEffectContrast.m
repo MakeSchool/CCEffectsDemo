@@ -16,7 +16,7 @@ static float conditionContrast(float contrast);
 
 @interface CCEffectContrast ()
 
-@property (nonatomic) NSNumber *conditionedContrast;
+@property (nonatomic, strong) NSNumber *conditionedContrast;
 
 @end
 
@@ -32,7 +32,7 @@ static float conditionContrast(float contrast);
 {
     CCEffectUniform* uniformContrast = [CCEffectUniform uniform:@"float" name:@"u_contrast" value:[NSNumber numberWithFloat:1.0f]];
     
-    if((self = [super initWithFragmentUniforms:@[uniformContrast] vertexUniforms:nil varying:nil]))
+    if((self = [super initWithFragmentUniforms:@[uniformContrast] vertexUniforms:nil varyings:nil]))
     {
         _contrast = contrast;
         _conditionedContrast = [NSNumber numberWithFloat:conditionContrast(contrast)];
@@ -51,7 +51,7 @@ static float conditionContrast(float contrast);
 {
     self.fragmentFunctions = [[NSMutableArray alloc] init];
 
-    CCEffectFunctionInput *input = [[CCEffectFunctionInput alloc] initWithType:@"vec4" name:@"inputValue" snippet:@"texture2D(cc_PreviousPassTexture, cc_FragTexCoord1)"];
+    CCEffectFunctionInput *input = [[CCEffectFunctionInput alloc] initWithType:@"vec4" name:@"inputValue" initialSnippet:@"cc_FragColor * texture2D(cc_PreviousPassTexture, cc_FragTexCoord1)" snippet:@"texture2D(cc_PreviousPassTexture, cc_FragTexCoord1)"];
 
     NSString* effectBody = CC_GLSL(
                                    return vec4(((inputValue.rgb - vec3(0.5)) * vec3(u_contrast) + vec3(0.5)), inputValue.a);

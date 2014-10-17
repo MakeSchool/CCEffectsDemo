@@ -25,4 +25,9 @@
     [[CCDirector sharedDirector] pushScene:stackScene];
 }
 
+- (void)effectNodeDemo {
+    CCScene *effectNodeScene = [CCBReader loadAsScene:@"EffectNodeScene"];
+    [[CCDirector sharedDirector] pushScene:effectNodeScene];
+}
+
 @end

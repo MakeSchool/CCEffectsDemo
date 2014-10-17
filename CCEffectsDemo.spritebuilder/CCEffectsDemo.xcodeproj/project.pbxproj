@@ -11,6 +11,7 @@
 		621F0FC91989A167008A0A45 /* GlasScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F0FC81989A167008A0A45 /* GlasScene.m */; };
 		62281DDC198A8F590097D2E3 /* EffectStackScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 62281DDB198A8F590097D2E3 /* EffectStackScene.m */; };
 		62281DE0198A914D0097D2E3 /* DemoScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 62281DDF198A914D0097D2E3 /* DemoScene.m */; };
+		6233D0D319D4E727005A43AF /* EffectNodeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6233D0D219D4E727005A43AF /* EffectNodeScene.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -68,6 +69,8 @@
 		62281DDB198A8F590097D2E3 /* EffectStackScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EffectStackScene.m; path = Source/EffectStackScene.m; sourceTree = "<group>"; };
 		62281DDE198A914D0097D2E3 /* DemoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoScene.h; path = Source/DemoScene.h; sourceTree = "<group>"; };
 		62281DDF198A914D0097D2E3 /* DemoScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoScene.m; path = Source/DemoScene.m; sourceTree = "<group>"; };
+		6233D0D119D4E727005A43AF /* EffectNodeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectNodeScene.h; path = Source/EffectNodeScene.h; sourceTree = "<group>"; };
+		6233D0D219D4E727005A43AF /* EffectNodeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EffectNodeScene.m; path = Source/EffectNodeScene.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				621F0FC31989A077008A0A45 /* StartScene.h */,
 				621F0FC41989A077008A0A45 /* StartScene.m */,
+				6233D0D119D4E727005A43AF /* EffectNodeScene.h */,
+				6233D0D219D4E727005A43AF /* EffectNodeScene.m */,
 				62281DDE198A914D0097D2E3 /* DemoScene.h */,
 				62281DDF198A914D0097D2E3 /* DemoScene.m */,
 				B7378992180767190076A88C /* PixelateScene.h */,
@@ -365,6 +370,7 @@
 				62281DDC198A8F590097D2E3 /* EffectStackScene.m in Sources */,
 				62281DE0198A914D0097D2E3 /* DemoScene.m in Sources */,
 				621F0FC91989A167008A0A45 /* GlasScene.m in Sources */,
+				6233D0D319D4E727005A43AF /* EffectNodeScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				621F0FC51989A077008A0A45 /* StartScene.m in Sources */,
 			);

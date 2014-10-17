@@ -21,7 +21,7 @@
     _brightnessEffect = [CCEffectBrightness effectWithBrightness:sin(0)];
     
     // A CCEffectStack allows you to combine multiple CCEffects and apply them to a Sprite
-    CCEffectStack *effectStack = [[CCEffectStack alloc] initWithEffects:@[contrastEffect, _brightnessEffect]];
+    CCEffectStack *effectStack = [[CCEffectStack alloc] initWithArray:@[contrastEffect, _brightnessEffect]];
     
     _spaceship.effect = effectStack;
 }
